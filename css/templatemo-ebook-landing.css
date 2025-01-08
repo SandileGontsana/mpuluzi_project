@@ -716,11 +716,58 @@ strong {
 /*---------------------------------------
   THE BOOK SECTION            
 -----------------------------------------*/
-.book-section-info {
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-left: 40px;
+
+
+.hero-section {
+    padding: 50px 1px 1px;
+    background-color: #0e0e0e;
+    color: white;
+    
 }
+
+.hero-section h1 {
+    font-size: 3.5rem;
+}
+
+
+
+.book-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-section-info {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .book-section-info {
+        text-align: center;
+    }
+
+    .btn.custom-btn {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .book-section-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .book-section-info p {
+        font-size: 0.9rem;
+    }
+}
+
 
 .nav-pills {
   border: 2px solid var(--primary-color);
@@ -1253,9 +1300,8 @@ color: white;
   }
 
   .book-section-info {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 20px;
+    padding-top: auto;
+  
   }
 
   .ebook-download-form {
